@@ -1,0 +1,2571 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-17T17:07:14.315Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1768469411,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioStart()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Create employee",
+        "description": "",
+        "id": "create-employees;create-employee",
+        "after": [
+          {
+            "result": {
+              "duration": 97818074,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioEnd(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1035309533,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open \"https://opensource-demo.orangehrmlive.com/index.php/auth/login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/index.php/auth/login\"",
+                  "offset": 7
+                }
+              ],
+              "location": "EssLogin.iOpenPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78468251,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I type username \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 16
+                }
+              ],
+              "location": "EssLogin.iTypeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56819259,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type pass \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 12
+                }
+              ],
+              "location": "EssLogin.iTypePass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1580047293,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on \"LOGIN\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LOGIN\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3005426364,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64475762,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I focus mouse on \"PIM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PIM\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 459974848,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Add Employee\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Employee\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82564682,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I type \"Fiona\" in \"First Name\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fiona\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"First Name\"",
+                  "offset": 18
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70078919,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I type \"Canvas\" in \"Last Name\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Canvas\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Last Name\"",
+                  "offset": 19
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55353587,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I check on \"Create Login Details\" checkbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Create Login Details\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iCheckOnCheckbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3002522785,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69097727,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I type \"Fiona\" in \"User Name\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fiona\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"User Name\"",
+                  "offset": 18
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79578218,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I type \"12345678\" in \"Password\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Password\"",
+                  "offset": 21
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70748817,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I type \"12345678\" in \"Confirm Password\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Confirm Password\"",
+                  "offset": 21
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61716047,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on \"Save\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3002298028,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28087975,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"Personal Details\" page will be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Personal Details\"",
+                  "offset": 0
+                }
+              ],
+              "location": "EssLogin.pageWillBeDisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Initialization"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-17T17:07:29.028Z",
+        "before": [
+          {
+            "result": {
+              "duration": 839000853,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioStart()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Add Leave Entitlement for employee by admin",
+        "description": "",
+        "id": "create-employees;add-leave-entitlement-for-employee-by-admin;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 99159473,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioEnd(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1057330550,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I open \"https://opensource-demo.orangehrmlive.com/index.php/auth/login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/index.php/auth/login\"",
+                  "offset": 7
+                }
+              ],
+              "location": "EssLogin.iOpenPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74436154,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I type username \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 16
+                }
+              ],
+              "location": "EssLogin.iTypeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48245285,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I type pass \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 12
+                }
+              ],
+              "location": "EssLogin.iTypePass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1926502992,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on \"LOGIN\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LOGIN\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3005535828,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37739539,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I focus mouse on \"Leave\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leave\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46328700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I focus mouse on \"Entitlements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Entitlements\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 501339316,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on \"Add Entitlements\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Entitlements\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004241986,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 91566283,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I type \"Fiona Canvas\" in \"Employee \" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fiona Canvas\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Employee \"",
+                  "offset": 25
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30002321,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "At \"Employee \", I press enter on my keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee \"",
+                  "offset": 3
+                }
+              ],
+              "location": "AddEmployee.atIPressEnterOnMyKeyboard(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69055448,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I select \"Vacation US\" in \"Leave Type\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vacation US\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 26
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66926728,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I type \"12\" in \"Entitlement\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Entitlement\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58507786,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on \"Save\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3003931645,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14635839,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "message \"Successfully Added\" will be appeared",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successfully Added\"",
+                  "offset": 8
+                }
+              ],
+              "location": "EssLogin.MessageWillBeAppeared(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Initialization"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-17T17:07:43.016Z",
+        "before": [
+          {
+            "result": {
+              "duration": 830862212,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioStart()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Add Leave Entitlement for employee by admin",
+        "description": "",
+        "id": "create-employees;add-leave-entitlement-for-employee-by-admin;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 96028141,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioEnd(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1233146739,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I open \"https://opensource-demo.orangehrmlive.com/index.php/auth/login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/index.php/auth/login\"",
+                  "offset": 7
+                }
+              ],
+              "location": "EssLogin.iOpenPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73864335,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I type username \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 16
+                }
+              ],
+              "location": "EssLogin.iTypeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51573390,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I type pass \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 12
+                }
+              ],
+              "location": "EssLogin.iTypePass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2147193959,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on \"LOGIN\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LOGIN\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3003537642,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53196414,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I focus mouse on \"Leave\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leave\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42813902,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I focus mouse on \"Entitlements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Entitlements\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1738311282,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on \"Add Entitlements\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Entitlements\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3005028029,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96234894,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I type \"Fiona Canvas\" in \"Employee \" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fiona Canvas\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Employee \"",
+                  "offset": 25
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25581070,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "At \"Employee \", I press enter on my keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee \"",
+                  "offset": 3
+                }
+              ],
+              "location": "AddEmployee.atIPressEnterOnMyKeyboard(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61773021,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I select \"Maternity US\" in \"Leave Type\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Maternity US\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 27
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56797494,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I type \"5\" in \"Entitlement\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Entitlement\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58035150,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on \"Save\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3002552683,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13244419,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "message \"Successfully Added\" will be appeared",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successfully Added\"",
+                  "offset": 8
+                }
+              ],
+              "location": "EssLogin.MessageWillBeAppeared(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Initialization"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-17T17:07:58.614Z",
+        "before": [
+          {
+            "result": {
+              "duration": 785388772,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioStart()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Add Leave Entitlement for employee by admin",
+        "description": "",
+        "id": "create-employees;add-leave-entitlement-for-employee-by-admin;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 104660012,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioEnd(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1378992043,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I open \"https://opensource-demo.orangehrmlive.com/index.php/auth/login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/index.php/auth/login\"",
+                  "offset": 7
+                }
+              ],
+              "location": "EssLogin.iOpenPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74203448,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I type username \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 16
+                }
+              ],
+              "location": "EssLogin.iTypeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54049108,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I type pass \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 12
+                }
+              ],
+              "location": "EssLogin.iTypePass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1583337245,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on \"LOGIN\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LOGIN\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004505511,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49767828,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I focus mouse on \"Leave\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leave\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44656277,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I focus mouse on \"Entitlements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Entitlements\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 489765599,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on \"Add Entitlements\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Entitlements\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004995727,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85755969,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I type \"Fiona Canvas\" in \"Employee \" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fiona Canvas\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Employee \"",
+                  "offset": 25
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24188483,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "At \"Employee \", I press enter on my keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee \"",
+                  "offset": 3
+                }
+              ],
+              "location": "AddEmployee.atIPressEnterOnMyKeyboard(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65266499,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I select \"Paternity US\" in \"Leave Type\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paternity US\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 27
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56313811,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I type \"4\" in \"Entitlement\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Entitlement\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63249575,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on \"Save\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3005196512,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13116751,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "message \"Successfully Added\" will be appeared",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successfully Added\"",
+                  "offset": 8
+                }
+              ],
+              "location": "EssLogin.MessageWillBeAppeared(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Initialization"
+          }
+        ]
+      }
+    ],
+    "name": "Create employees",
+    "description": "",
+    "id": "create-employees",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddEmployee.feature",
+    "tags": [
+      {
+        "name": "@Initialization",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-17T17:08:12.508Z",
+        "before": [
+          {
+            "result": {
+              "duration": 864964762,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioStart()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Verify that ESS can apply leave Full Day with valid data",
+        "description": "",
+        "id": "apply-leave;verify-that-ess-can-apply-leave-full-day-with-valid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 108378452,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioEnd(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1358118608,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I open \"https://opensource-demo.orangehrmlive.com/index.php/auth/login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/index.php/auth/login\"",
+                  "offset": 7
+                }
+              ],
+              "location": "EssLogin.iOpenPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74361227,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I type username \"fiona\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fiona\"",
+                  "offset": 16
+                }
+              ],
+              "location": "EssLogin.iTypeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50762305,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I type pass \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 12
+                }
+              ],
+              "location": "EssLogin.iTypePass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1592505290,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on \"LOGIN\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LOGIN\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004047471,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43048180,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I focus mouse on \"Leave\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leave\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 601189119,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on \"Apply\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apply\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004965447,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67410861,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I select \"Vacation US\" in \"Leave Type\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vacation US\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 26
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156446582,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I type \"2020-06-25\" in \"From Date\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-06-25\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"From Date\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128485121,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I type \"2020-06-25\" in \"To Date\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-06-25\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"To Date\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24180938,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "At \"To Date\", I press enter on my keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"To Date\"",
+                  "offset": 3
+                }
+              ],
+              "location": "AddEmployee.atIPressEnterOnMyKeyboard(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39188805,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I select \"Full Day\" in \"Duration\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Full Day\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Duration\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 566411566,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on \"Apply\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apply\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004063342,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 511010903,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on \"My Leave\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Leave\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3005826461,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1041019884,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "new record will be added in \"My Leave\" page with data:\"2020-06-25\" in \"Date\", \"Vacation US\" in \"Leave Type\", \"11.00\" in \"Leave Balance\", \"8.00\" in \"Number of Hours\", and \"Pending Approval\" in \"Status\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Leave\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"2020-06-25\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"Date\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"Vacation US\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"11.00\"",
+                  "offset": 109
+                },
+                {
+                  "val": "\"Leave Balance\"",
+                  "offset": 120
+                },
+                {
+                  "val": "\"8.00\"",
+                  "offset": 137
+                },
+                {
+                  "val": "\"Number of Hours\"",
+                  "offset": 147
+                },
+                {
+                  "val": "\"Pending Approval\"",
+                  "offset": 170
+                },
+                {
+                  "val": "\"Status\"",
+                  "offset": 192
+                }
+              ],
+              "location": "ApplyLeave.newRecordWillBeAddedInPageWithDataInInInInAndIn(String,String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@leave"
+          },
+          {
+            "name": "@Initialization"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-17T17:08:31.778Z",
+        "before": [
+          {
+            "result": {
+              "duration": 883398097,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioStart()"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "Verify that ESS can apply leave Haft Day with valid data",
+        "description": "",
+        "id": "apply-leave;verify-that-ess-can-apply-leave-haft-day-with-valid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 98246476,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioEnd(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2986496247,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I open \"https://opensource-demo.orangehrmlive.com/index.php/auth/login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/index.php/auth/login\"",
+                  "offset": 7
+                }
+              ],
+              "location": "EssLogin.iOpenPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77666102,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I type username \"fiona\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fiona\"",
+                  "offset": 16
+                }
+              ],
+              "location": "EssLogin.iTypeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53518955,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I type pass \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 12
+                }
+              ],
+              "location": "EssLogin.iTypePass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2349117960,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on \"LOGIN\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LOGIN\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3003390627,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43001443,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I focus mouse on \"Leave\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leave\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 551010255,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I click on \"Apply\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apply\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004932602,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67714454,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I select \"Paternity US\" in \"Leave Type\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paternity US\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 27
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148670632,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I type \"2020-06-22\" in \"From Date\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-06-22\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"From Date\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129766848,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I type \"2020-06-22\" in \"To Date\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-06-22\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"To Date\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25410582,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "At \"To Date\", I press enter on my keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"To Date\"",
+                  "offset": 3
+                }
+              ],
+              "location": "AddEmployee.atIPressEnterOnMyKeyboard(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64945744,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I select \"Half Day\" in \"Duration\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Half Day\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Duration\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 635709197,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I click on \"Apply\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apply\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004153480,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 560823350,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I click on \"My Leave\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Leave\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3002881953,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 932901761,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "new record will be added in \"My Leave\" page with data:\"2020-06-22 (09:00 - 13:00) Half Day\" in \"Date\", \"Paternity US\" in \"Leave Type\", \"3.50\" in \"Leave Balance\", \"4.00\" in \"Number of Hours\", and \"Pending Approval\" in \"Status\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Leave\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"2020-06-22 (09:00 - 13:00) Half Day\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"Date\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"Paternity US\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"3.50\"",
+                  "offset": 135
+                },
+                {
+                  "val": "\"Leave Balance\"",
+                  "offset": 145
+                },
+                {
+                  "val": "\"4.00\"",
+                  "offset": 162
+                },
+                {
+                  "val": "\"Number of Hours\"",
+                  "offset": 172
+                },
+                {
+                  "val": "\"Pending Approval\"",
+                  "offset": 195
+                },
+                {
+                  "val": "\"Status\"",
+                  "offset": 217
+                }
+              ],
+              "location": "ApplyLeave.newRecordWillBeAddedInPageWithDataInInInInAndIn(String,String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@leave"
+          },
+          {
+            "name": "@Initialization"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-17T17:08:53.417Z",
+        "before": [
+          {
+            "result": {
+              "duration": 879877172,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioStart()"
+            }
+          }
+        ],
+        "line": 59,
+        "name": "Verify that ESS can apply leave specify time with valid data",
+        "description": "",
+        "id": "apply-leave;verify-that-ess-can-apply-leave-specify-time-with-valid-data",
+        "after": [
+          {
+            "result": {
+              "duration": 99149649,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioEnd(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1256112843,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I open \"https://opensource-demo.orangehrmlive.com/index.php/auth/login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/index.php/auth/login\"",
+                  "offset": 7
+                }
+              ],
+              "location": "EssLogin.iOpenPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74877462,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I type username \"fiona\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fiona\"",
+                  "offset": 16
+                }
+              ],
+              "location": "EssLogin.iTypeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47924877,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I type pass \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 12
+                }
+              ],
+              "location": "EssLogin.iTypePass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2529173859,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I click on \"LOGIN\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LOGIN\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3003848130,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45921665,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I focus mouse on \"Leave\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leave\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddEmployee.iFocusMouseOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 628892423,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I click on \"Apply\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apply\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3005404771,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66501238,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I select \"Maternity US\" in \"Leave Type\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Maternity US\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 27
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146590848,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I type \"2020-06-29\" in \"From Date\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-06-29\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"From Date\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128108036,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I type \"2020-06-29\" in \"To Date\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-06-29\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"To Date\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ContactDetails.iTypeInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34163197,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "At \"To Date\", I press enter on my keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"To Date\"",
+                  "offset": 3
+                }
+              ],
+              "location": "AddEmployee.atIPressEnterOnMyKeyboard(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84410323,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I select \"Specify Time\" in \"Duration\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Specify Time\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Duration\"",
+                  "offset": 27
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72309135,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I select \"09:00\" in \"From\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"09:00\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"From\"",
+                  "offset": 20
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87755303,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I select \"11:30\" in \"To\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11:30\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"To\"",
+                  "offset": 20
+                }
+              ],
+              "location": "ContactDetails.iSelectInField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 537449599,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I click on \"Apply\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apply\"",
+                  "offset": 11
+                }
+              ],
+              "location": "EssLogin.iClickOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004521085,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I wait some seconds",
+            "match": {
+              "location": "EssLogin.iWaitMinutes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 631474124,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I click on \"My Leave\" on SubMenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Leave\"",
+                  "offset": 11
+                }
+              ],
+              "location": "AddEmployee.iClickOnOnSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 834240312,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "new record will be added in \"My Leave\" page with data:\"2020-06-29 (09:00 - 11:30)\" in \"Date\", \"Maternity US\" in \"Leave Type\", \"4.69\" in \"Leave Balance\", \"2.50\" in \"Number of Hours\", and \"Pending Approval\" in \"Status\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Leave\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"2020-06-29 (09:00 - 11:30)\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"Date\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"Maternity US\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"Leave Type\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"4.69\"",
+                  "offset": 126
+                },
+                {
+                  "val": "\"Leave Balance\"",
+                  "offset": 136
+                },
+                {
+                  "val": "\"2.50\"",
+                  "offset": 153
+                },
+                {
+                  "val": "\"Number of Hours\"",
+                  "offset": 163
+                },
+                {
+                  "val": "\"Pending Approval\"",
+                  "offset": 186
+                },
+                {
+                  "val": "\"Status\"",
+                  "offset": 208
+                }
+              ],
+              "location": "ApplyLeave.newRecordWillBeAddedInPageWithDataInInInInAndIn(String,String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@leave"
+          },
+          {
+            "name": "@Initialization"
+          }
+        ]
+      }
+    ],
+    "name": "Apply Leave",
+    "description": "",
+    "id": "apply-leave",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ApplyLeave.feature",
+    "tags": [
+      {
+        "name": "@leave",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
