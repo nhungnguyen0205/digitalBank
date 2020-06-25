@@ -83,4 +83,9 @@ public class SignUp {
     public void errorMessageAboutFormatWillBeDisplayed(String field) {
        Assert.assertTrue(!getDriver().findElement(By.xpath("//*[contains(text(),'"+field+"')]/../following-sibling::input")).getAttribute("pattern").isEmpty());
     }
+
+    @Then("user can not move to next page because {string} is not checked.")
+    public void userCanNotMoveToNextPageBecauseAgreeTheTermsAndPolicyIsNotChecked(String field) {
+        Assert.assertTrue(!getDriver().findElement(By.xpath("//*[contains(text(),'"+field+"')]/../input")).getAttribute("required").isEmpty());
+    }
 }
