@@ -6,6 +6,8 @@ import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 
 import java.util.List;
 import java.util.Map;
@@ -43,8 +45,27 @@ public class Checking {
         Assert.assertTrue(getDriver().findElement(By.xpath("//div[contains(text(),'"+nameOfChecking+"')]/..//*[contains(text(),'Account')]")).getText().contains(list.get(0).get("Account")));
         Assert.assertTrue(getDriver().findElement(By.xpath("//div[contains(text(),'"+nameOfChecking+"')]/..//*[contains(text(),'Ownership')]")).getText().contains(list.get(0).get("Ownership")));
         Assert.assertTrue(getDriver().findElement(By.xpath("//div[contains(text(),'"+nameOfChecking+"')]/..//*[contains(text(),'Balance')]")).getText().contains(list.get(0).get("Balance")));
-       Assert.assertTrue((getDriver().findElement(By.xpath("//div[contains(text(),'"+nameOfChecking+"')]/..//*[@name = 'selectSwitch']")).isSelected()));
+       Assert.assertTrue((getDriver().findElement(By.xpath("//div[contains(text(),'"+nameOfChecking+"')]/..//*[@name = 'selectSwitch']")).getAttribute("checked").isEmpty()));
 
 
+    }
+    @Then("Only one checking account available at the time")
+    public void onlyOneCheckingAccountAvailableAtTheTime() {
+        List<WebElement> el = getDriver().findElements(By.xpath("//*[@id = 'firstRow']/div//*[@name = 'selectSwitch']"));
+        int count = 0 ;
+        System.out.println(el.size());
+        for (WebElement e: el) {
+            System.out.println(e);
+            String checked =e.getAttribute("checked");
+            if(checked != null){
+               count++;
+            }
+        }
+        Assert.assertTrue(count ==1);
+    }
+
+    @Then("message will be displayed because {string} is not selected.")
+    public void messageWillBeDisplayedBecauseIsNotSelected(String field) {
+        Assert.assertTrue(!getDriver().findElement(By.xpath("//*[@for = '"+field+"']/input")).getAttribute("required").isEmpty());
     }
 }
