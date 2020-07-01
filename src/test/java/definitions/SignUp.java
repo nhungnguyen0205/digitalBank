@@ -74,11 +74,6 @@ public class SignUp {
         Assert.assertTrue(getDriver().findElement(By.xpath("//*[contains(text(),'"+err+"')]")).isDisplayed());
     }
 
-    @Then("error message will be displayed.")
-    public void errorMessageWillBeDisplayed() {
-
-    }
-
     @Then("error message about {string} format will be displayed.")
     public void errorMessageAboutFormatWillBeDisplayed(String field) {
        Assert.assertTrue(!getDriver().findElement(By.xpath("//*[contains(text(),'"+field+"')]/../following-sibling::input")).getAttribute("pattern").isEmpty());

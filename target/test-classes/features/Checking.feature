@@ -65,9 +65,33 @@ Feature: checking account
     Then "New Checking Account" page will be displayed
     When  I select "Interest Checking"
     And I select "Joint"
-    And I type "Interest Checking Joint 1" on "Account Name" field
+    And I type "Interest Checking Joint 6" on "Account Name" field
     And I type "18000" on "Initial Deposit Amount" field
     And I click on "Submit" button
-    Then "Interest Checking Joint 1" is displayed with following information and this bank is selected for default bank.
+    Then "Interest Checking Joint 6" is displayed with following information and this bank is selected for default bank.
       |Account|Ownership|Balance|
       |Interest Checking|Joint|18000|
+  Scenario: Only one checking account available at the time
+    Given I open page with url "http://dbankdemo.com/login"
+    When I type "vctv1112@gmail.com" on "User Name" field
+    And I type "Vstv12345678" on "Password" field
+    And I click on "Sign in" button
+    Then I wait some minutes
+    When I click on "Checking" on the left menu
+    And I click on "View Checking" on the sub menu
+    Then I wait some minutes
+    Then Only one checking account available at the time
+   Scenario: User cant create account without select "Select Checking Account Type"
+     Given I open page with url "http://dbankdemo.com/login"
+     When I type "vctv1112@gmail.com" on "User Name" field
+     And I type "Vstv12345678" on "Password" field
+     And I click on "Sign in" button
+     Then I wait some minutes
+     When I click on "Checking" on the left menu
+     And I click on "New Checking" on the sub menu
+     And I select "Individual"
+     And I type "Test Account" on "Account Name" field
+     And I type "52" on "Initial Deposit Amount" field
+     And I click on "Submit" button
+     Then message will be displayed because "Standard Checking" is not selected.
+
